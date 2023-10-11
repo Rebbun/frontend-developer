@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background: peru;
+      }
+      .card {
+        background-color: orangered;
+      }
+      .card1 {
+        color: yellow;
+      }
+      .card2 {
+        color: blueviolet;
+      }
+      #button {
+        text-align: center;
+      }
+      #eliminar {
+        background-color: red;
+      }
+      a[href="https://platzi.com"]
+      {
+        background-color: yellowgreen;
+      }
+      * {
+        background-color: violet;
+      }
+      .container li {
+        color: gold;
+      }
+      .container > p {
+        color: red;
+      }
+      div + p{
+        color: blueviolet;
+      }
+      div ~ p{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="div">
+      <div class="card card1">Opa,</div>
+      <div>Yo</div>
+      <div class="card card1">voy</div>
+      <div class="card card2">a</div>
+      <div>hacer</div>
+      <div class="card">un</div>
+      <div class="card card2">corral.</div>
+      <br />
+      <div>Para</div>
+      <div class="card">echar</div>
+      <div>gallinas.</div>
+      <br />
+    </section>
+    <section id="button">
+      <p>Variocolor gratis</p>
+      <button>Tarountula</button>
+      <button id="eliminar">Tandemaus<br />(Bórrenlo del juego).</button>
+      <button>Pawmi</button>
+      <button>Klawf</button>
+      <button>Rellor</button>
+    </section>
+    <section id="links">
+      <a href="https://platzi.com">Platzi</a>
+    </section>
+    <section id="descendant-combinator">
+      <ul class="container">
+        <li>Pokachu</li>
+        <li>Moñepink</li>
+        <li>Pimieliers</li>
+        <li>Leafurra</li>
+      </ul>
+
+      <ul class="container2">
+        <li>Gongar</li>
+        <li>Stoolix</li>
+      </ul>
+    </section>
+    <section id="direct-children">
+      <div class="container">
+        <p>Hola</p>
+        <p>caracola</p>
+        <p>.</p>
+        <div>
+          <p>Adiós</p>
+          <p>carapollo</p>
+          <p>.</p>
+        </div>
+        <div></div>
+      </div>
+    </section>
+    <section id="adjacent-element-combinator">
+        <p>Platzi</p>
+        <p>nos</p>
+        <p>enseña</p>
+        <div>(a nunca parar de aprender)</div>
+        <p>muchas</p>
+        <div>(personalidades de Freddy)</div>
+        <p>cosas</p>
+        <p>.</p>
+    </section>
+    <section id="sibling-combinator">
+        <p>Hola,</p>
+        <p>esta</p>
+        <div></div>
+            <p>es</p>
+            <p>la</p>
+            <p>última</p>
+            <p>tarea</p>
+            <p>.</p>
+        <section>
+            <p>Adiós</p>
+            <p>.</p>
+        </section>
+    </section>
+  </body>
+  <script src="div.js"></script>
+</html>
