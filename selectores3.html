@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: salmon;
+        }
+        p::first-letter {
+            color: teal;
+        }
+        p::before {
+            content: "🎈";
+        }
+        p::after {
+            content: "🎀";
+        }
+        p:hover {
+            color: skyblue;
+        }
+        div p:nth-child(2) {
+            color: violet;
+        }
+        ::placeholder {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Me gustan los melones.</h1>
+    </main>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
