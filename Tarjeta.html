@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 510px;
+            height: 300px;
+            background-color: grey; 
+            position: relative;
+
+        }
+        .container > div {
+            width: 505px;
+            height: 300px;
+            margin-left: 2px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 35px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container div p, div img, div ul {
+            position: absolute;
+        }
+        
+    #rainbow {
+        width: 450px;
+        height: 170px;
+        top: 33px;
+        right: -23px;
+    }
+    #picture {
+        width: 168px;
+        height: 205px;
+        right: 323px;
+        top: 6px;
+        border-radius: 20px 0px 0px;
+    }
+    #country {
+        top: 10px;
+        left: 190px;
+        font-family: 'Young Serif', serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: blue;
+        text-shadow: 0px 2px 0px black;
+    }
+    #type {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: blue;
+    }
+    .date-type {
+        font-size: 15px;
+    }
+    .date-value {
+        font-size: 23px;
+        font-weight: bold;
+    }
+    #number .date-type {
+        top: 50px;
+        left: 190px;
+    }
+    #number .date-value {
+        top: 44px;
+        right: 120px;
+    }
+    #birthday .date-type {
+        top: 98px;
+        left: 190px;
+    }
+    #birthday .date-value {
+        top: 91px;
+        right: 177px;
+    }
+    #expedition .date-type {
+        top: 98px;
+        right: 143px;
+    }
+    #expedition .date-value {
+        top: 91px;
+        right: 35px;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #first-dates {
+        top: 135px;
+        right: 38px;
+        font-size: 13px;
+    }
+    #last-dates {
+        top: 183px;
+        right: 43px;
+        font-size: 12px;
+    }
+    ul li {
+        margin: 0 10px 0 10px;
+    }
+    #kiss-mark {
+        width: 100px;
+        height: 60px;
+        top: 210px;
+        right: 230px;
+    }
+    #barcode {
+        width: 138px;
+        top: 211px;
+        right: 343px;
+    }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <img src="./Imagenes/arcoiris.png" alt="arcoiris" id="rainbow">
+            <img src="./Imagenes/charmingPrince.jpg" alt="miFoto" id="picture">
+            <p id="country">FAR FAR AWAY</p>
+            <p id="type">PRINCE<br>LICENSE</p>
+            <section id="number">
+                <p class="date-type">NUMBER</p>
+                <p class="date-value">04-33-92106</p>
+            </section>
+            <section id="birthday">
+                <p class="date-type">DOB</p>
+                <p class="date-value">Unknown</p>
+            </section>
+            <section id="expedition">
+                <p class="date-type">EXP</p>
+                <p class="date-value">12/31/2023</p>
+            </section>
+            <ul id="first-dates">
+                <li>HT<br>6-4</li>
+                <li>WT<br>187</li>
+                <li>HAIR<br>BLO</li>
+                <li>EYER<br>BLU</li>
+                <li>SEX<br>MEN</li>
+                <li>CTY<br>000</li>
+            </ul>
+            <ul id="last-dates">
+                <li>ISSUEDATE<br>05/19/2004</li>
+                <li>CLASS<br>2</li>
+                <li>RESTR</li>
+                <li>ENDORSE</li>
+            </ul>
+            <img src="./Imagenes/kiss-mark.png" alt="kiss" id="kiss-mark">
+            <img src="./Imagenes/bar-code.PNG" alt="barcode" id="barcode">
+            <section id="name-and-home">
+                <p class="date-type">Prince Charming<br>Fairy Godmother's Potion Factory</p>
+            </section>
+        </div>
+    </main>
+    <img src="./Imagenes/McLovin2.PNG" alt="McLovin">
+</body>
+</html>
